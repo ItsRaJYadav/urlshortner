@@ -1,46 +1,75 @@
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  color: #222;
-  background-color: #fff;
-  text-align: center;
-  line-height: 1.4em;
-}
 
-main {
-  padding: 0;
-  margin-top: 40px;
-}
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
 
-h3 {
-  margin-top: 30px;
-}
+    .container {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 400px; /* Increased width for a more spacious layout */
+      text-align: center;
+    }
 
+    h1 {
+      color: #333;
+      margin-bottom: 20px; /* Add some spacing below the header */
+    }
 
+    form {
+      display: flex;
+      flex-direction: column;
+    }
 
-.user-stories li {
-  margin-bottom: 1em;
-}
+    input[type="url"] {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
 
-a {
-  color: #2574a9;
-}
+    button {
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
 
-form {
-  margin: 10px auto;
-  padding: 20px;
-  max-width: 600px;
-}
+    button:hover {
+      background-color: #0056b3;
+    }
+  
 
-label {
-  margin-right: 10px;
-}
+  
+   
+    .shortened-url {
+      margin-top: 20px;
+      color: #333;
+      font-size: 18px;
+    }
 
-input {
-  padding: 5px;
-}
+    .copy-button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
 
-input[type='text'] {
-  width: 220px;
-  text-align: center;
-}
+    .copy-button:hover {
+      background-color: #0056b3;
+    }
+  

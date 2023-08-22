@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shortened URL</title>
+  <link rel="stylesheet" href="/style.css">
+  
+</head>
+<body>
+  <div class="container">
+    <h1>Shortened URL</h1>
+    <p class="shortened-url">Shortened URL: <a href="<%= shortUrl %>"><%= shortUrl %></a></p>
+    <button class="copy-button" onclick="copyToClipboard('<%= shortUrl %>')">Copy</button>
+  </div>
+
+  <script>
+    function copyToClipboard(text) {
+      const textarea = document.createElement('textarea');
+      textarea.value = text;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textarea);
+      alert('URL copied to clipboard!');
+    }
+  </script>
+</body>
+</html>
